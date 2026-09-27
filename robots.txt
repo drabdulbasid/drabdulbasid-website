@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drabdulbasid.com/sitemap.xml
