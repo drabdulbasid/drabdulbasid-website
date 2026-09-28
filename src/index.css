@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Public Sans", sans-serif;
+  overflow-x: clip;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+::selection {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 96%;
+    --card: 222 42% 14%;
+    --card-foreground: 210 40% 96%;
+    --popover: 222 45% 12%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 205 82% 63%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 34% 20%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 222 34% 19%;
+    --muted-foreground: 210 23% 72%;
+    --accent: 221 35% 21%;
+    --accent-foreground: 210 40% 96%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 96%;
+    --border: 219 32% 25%;
+    --input: 219 32% 27%;
+    --ring: 205 82% 63%;
+    --radius: 0.25rem;
+    --sidebar-background: 222 47% 12%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 205 82% 63%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 221 35% 21%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 219 32% 25%;
+    --sidebar-ring: 205 82% 63%;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Oswald", sans-serif;
+  }
+  .panel {
+    @apply bg-white/[0.03] ring-1 ring-inset ring-white/10;
+  }
+  .annotation {
+    @apply font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground;
+  }
+}
