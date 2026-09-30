@@ -111,10 +111,8 @@ export default function HomePage() {
 							</p>
 						</Reveal>
 						<Reveal delay={0.1}>
-							<h1 className="mt-6 font-display text-6xl font-semibold uppercase leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
-								Dr. Abdul
-								<br />
-								basid <span className="text-primary">Banga</span>
+							<h1 className="mt-6 whitespace-nowrap font-display text-xl font-semibold uppercase leading-[0.95] tracking-tight sm:text-3xl lg:text-5xl">
+								Dr. ABDULBASID <span className="text-primary">BANGA</span>
 							</h1>
 						</Reveal>
 						<Reveal delay={0.2}>
